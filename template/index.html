@@ -1,0 +1,2847 @@
+<!doctype html>
+<html class="no-js" lang="eng">
+<head>
+    <title>Singh Darbar</title>       
+    <!-- CSS -->
+    {% include 'include/css.html' %}
+</head>
+<!-- <body oncontextmenu="return false"> -->
+<body>
+
+    <!-- header -->
+    {% include 'include/header.html' %}
+    <!-- End -->
+
+    <!--mini cart-->
+    <div class="mini_cart">
+
+        <div class="cart_gallery">
+
+            <div class="cart_close">
+
+                <div class="cart_text">
+
+                    <h3>cart</h3>
+
+                </div>
+
+                <div class="mini_cart_close">
+
+                    <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="cart_item">
+
+                <div class="cart_img">
+
+                    <a href="product-detail.php"><img src="assets/img/product/product1.png" alt=""></a>
+
+                </div>
+
+                <div class="cart_info">
+
+                    <a href="product-detail.php">Primis In Faucibus</a>
+
+                    <p>1 x <span> $65.00 </span></p>
+
+                </div>
+
+                <div class="cart_remove">
+
+                    <a href="#"><i class="ion-android-close"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="cart_item">
+
+                <div class="cart_img">
+
+                    <a href="product-detail.php"><img src="assets/img/product/product2.png" alt=""></a>
+
+                </div>
+
+                <div class="cart_info">
+
+                    <a href="product-detail.php">Letraset Sheets</a>
+
+                    <p>1 x <span> $60.00 </span></p>
+
+                </div>
+
+                <div class="cart_remove">
+
+                    <a href="#"><i class="ion-android-close"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mini_cart_table">
+
+            <div class="cart_table_border">
+
+                <div class="cart_total">
+
+                    <span>Sub total:</span>
+
+                    <span class="price">$125.00</span>
+
+                </div>
+
+                <div class="cart_total mt-10">
+
+                    <span>total:</span>
+
+                    <span class="price">$125.00</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mini_cart_footer">
+
+            <div class="cart_button">
+
+                <a href="cart.php">View cart</a>
+
+            </div>
+
+            <div class="cart_button">
+
+                <a href="checkout.php"><i class="fa fa-sign-in"></i> Checkout</a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--mini cart end-->
+
+    <!-- page search box -->
+    <div class="page_search_box">
+
+        <div class="search_close">
+
+            <i class="ion-close-round"></i>
+
+        </div>
+
+        <form class="border-bottom" action="#">
+
+            <input class="border-0" placeholder="Search products..." type="text">
+
+            <button type="submit"><span class="pe-7s-search"></span></button>
+
+        </form>
+
+    </div>
+
+    <!--slide banner section start-->
+
+    <div class="hero_banner_section d-flex align-items-center mb-110">
+
+        <div class="hero_banner_inner">
+
+            <div class="container">
+
+                <div class="row align-items-end">
+
+                    <div class="col-lg-8">
+
+                        <div class="hero_content">
+
+                            <!-- <h3 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s"><span>70%</span>Sale Off</h3> -->
+
+                            <div class="main-wrap">
+
+                                <h1 class="wow fadeInUp title" data-wow-delay="0.2s" data-wow-duration="1.2s">Taste that is truly traditional</h1>
+
+                                <h5 class="sub-text">authentic & handcrafted Sweets Made With Pure ingredients</h5>
+
+                            </div>
+
+                            <a class="btn btn-link wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s" href="shop-left-sidebar.html">Shop Now</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <div class="hero_shape_banner"> 
+                            {% load static %}
+                            <img class="banner_keyframes_animation wow" src="{% static 'assets/img/slider/slider.png' %}" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- <div class="hero_mini_shape shape1">
+
+            <img src="assets/img/slider/1.png" alt="">
+
+        </div>
+
+        <div class="hero_mini_shape shape2">
+
+            <img src="assets/img/slider/5.png" alt="">
+
+        </div>
+
+        <div class="hero_mini_shape shape3">
+
+            <img src="assets/img/slider/2.png" alt="">
+
+        </div> -->
+
+        <!-- <div class="hero_mini_shape shape4">
+
+            <img src="assets/img/slider/3.png" alt="">
+
+        </div>
+
+        <div class="hero_mini_shape shape5">
+
+            <img src="assets/img/slider/4.png" alt="">
+
+        </div> -->
+
+    </div>
+
+    <!--slider area end-->
+
+
+
+    <!-- service section start-->
+
+    <div class="service_section mb-86">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="services_section_inner d-flex justify-content-between">
+
+                        <div class="single_services one text-center wow fadeInUp" data-wow-delay="0.1s"
+
+                            data-wow-duration="1.1s">
+
+                            <div class="services_thumb">
+                                {% load static %}
+                                <img src="{% static 'assets/img/home/1.jpg' %}" alt="">
+
+                            </div>
+
+                            <div class="services_content">
+
+                                <h5><a href="shop-left-sidebar.html">Gifting Hampers</a></h5>
+                                <p>Exquisite Ghee Sweets & Nutty Delights Await You!</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="single_services two text-center wow fadeInUp" data-wow-delay="0.2s"
+
+                            data-wow-duration="1.2s">
+
+                            <div class="services_thumb">
+
+                                <img src="{% static 'assets/img/home/2.jpg' %}" alt="">
+
+                            </div>
+
+                            <div class="services_content">
+
+                                <h5><a href="shop-left-sidebar.html">Bhaji</a></h5>
+
+                                <p>Elegant Bhaji Boxes: Perfect for Celebrating Indian Weddings!</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="single_services three text-center wow fadeInUp" data-wow-delay="0.3s"
+
+                            data-wow-duration="1.3s">
+
+                            <div class="services_thumb">
+
+                                <img src="{% static 'assets/img/home/3.jpg' %}" alt="">
+
+                            </div>
+
+                            <div class="services_content">
+
+                                <h5><a href="shop-left-sidebar.html">Dry Fruit</a></h5>
+                                <p>Exquisite Dry Fruit Boxes - Nature's Finest Selection, Delivered to You.</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="single_services four text-center wow fadeInUp" data-wow-delay="0.4s"
+
+                            data-wow-duration="1.4s">
+
+                            <div class="services_thumb">
+
+                                <img src="{% static 'assets/img/home/4.jpg' %}" alt="">
+
+                            </div>
+
+                            <div class="services_content">
+
+                                <h5><a href="shop-left-sidebar.html">Mathri's & Namkeens</a></h5>
+
+                                <p>Experience the Crispy Perfection of Our Handcrafted Mathri's and Namkeen's – Authentic Flavors, Freshly Made for You.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end -->
+
+
+
+    <!-- banner section  start -->
+
+    <div class="banner_section mb-105">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="single_banner wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+
+                        <div class="banner_thumb">
+                            {% load static %}
+                            <a href="#"><img src="{% static 'assets/img/offer/1.jpg'%}" alt=""></a>
+
+                            <div class="banner_text">
+
+                                <!-- <h3><span>70%</span> Sale Off</h3> -->
+
+                                <h2>Best Quality <br> Products</h2>
+
+                                <a class="btn btn-link" href="shop-left-sidebar.html">Shop Now</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="single_banner wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
+
+                        <div class="banner_thumb">
+                            {% load static %}
+                            <a href="#"><img src="{% static 'assets/img/offer/2.jpg' %}" alt=""></a>
+
+                            <div class="banner_text">
+
+                                <!-- <h3><span>25%</span> Sale Off</h3> -->
+
+                                <h2>Hot & Spicy <br>
+
+                                    Pastry</h2>
+
+                                <a class="btn btn-link" href="shop-left-sidebar.html">Shop Now</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end -->
+
+
+
+    <!-- product section start -->
+
+    <div class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+
+        <div class="container">
+
+            <div class="product_header">
+
+                <div class="section_title text-center">
+
+                    <h2>New Products</h2>
+
+                </div>
+
+                <!-- <div class="product_tab_button">
+
+                    <ul class="nav justify-content-center" role="tablist" id="nav-tab">
+
+                        <li>
+
+                            <a class="active" data-toggle="tab" href="#features" role="tab" aria-controls="features" aria-selected="false">Our Features</a>
+
+                        </li>
+
+                        <li>
+
+                            <a data-toggle="tab" href="#seller" role="tab" aria-controls="seller" aria-selected="false">Best Sellers</a>
+
+                        </li>
+
+                        <li>
+
+                            <a data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">New Items</a>
+
+                        </li>
+
+                    </ul>
+
+                </div> -->
+
+            </div>
+
+            <div class="tab-content product_container">
+
+                <div class="tab-pane fade show active" id="features" role="tabpanel">
+
+                    <div class="product_gallery">
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="">
+                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                            </a>
+
+                                            <div class="action_links">
+                                                <ul class="d-flex justify-content-center">
+                                                    <li class="add_to_cart">
+                                                        <a href="cart.php" title="Add to cart">
+                                                            <span class="pe-7s-shopbag"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="wishlist">
+                                                        <a href="#" title="Add to Wishlist">
+                                                            <span class="pe-7s-like"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="quick_button">
+                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                            <span class="pe-7s-look"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <figcaption class="product_content text-center">
+                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                            <div class="price_box">
+                                                <span class="current_price">₹ 600</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="">
+                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                            </a>
+
+                                            <div class="action_links">
+                                                <ul class="d-flex justify-content-center">
+                                                    <li class="add_to_cart">
+                                                        <a href="cart.php" title="Add to cart">
+                                                            <span class="pe-7s-shopbag"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="wishlist">
+                                                        <a href="#" title="Add to Wishlist">
+                                                            <span class="pe-7s-like"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="quick_button">
+                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                            <span class="pe-7s-look"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <figcaption class="product_content text-center">
+                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                            <div class="price_box">
+                                                <span class="current_price">₹ 600</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="">
+                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                            </a>
+
+                                            <div class="action_links">
+                                                <ul class="d-flex justify-content-center">
+                                                    <li class="add_to_cart">
+                                                        <a href="cart.php" title="Add to cart">
+                                                            <span class="pe-7s-shopbag"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="wishlist">
+                                                        <a href="#" title="Add to Wishlist">
+                                                            <span class="pe-7s-like"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="quick_button">
+                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                            <span class="pe-7s-look"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <figcaption class="product_content text-center">
+                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                            <div class="price_box">
+                                                <span class="current_price">₹ 600</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+                                    <figure>
+                                        <div class="product_thumb">
+                                            <a href="">
+                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                            </a>
+
+                                            <div class="action_links">
+                                                <ul class="d-flex justify-content-center">
+                                                    <li class="add_to_cart">
+                                                        <a href="cart.php" title="Add to cart">
+                                                            <span class="pe-7s-shopbag"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="wishlist">
+                                                        <a href="#" title="Add to Wishlist">
+                                                            <span class="pe-7s-like"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="quick_button">
+                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                            <span class="pe-7s-look"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <figcaption class="product_content text-center">
+                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                            <div class="price_box">
+                                                <span class="current_price">₹ 600</span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </article>
+                            </div>
+
+                            <!-- <div class="col-lg-3 col-md-4 col-sm-6"> -->
+                                <!-- <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product1.jpg" alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart">
+
+                                                        <a href="cart.php" title="Add to cart"><span class="pe-7s-shopbag"></span></a>
+
+                                                    </li>
+
+                                                    <li class="wishlist">
+
+                                                        <a href="wishlist.html" title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button">
+
+                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box"> <span class="pe-7s-look"></span></a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$22.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article> -->
+                            <!-- </div> -->
+
+                            <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product2.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Lorem, ipsum dolor.</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$24.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product3.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+
+                                                        <span class="pe-7s-look"></span></a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Praesentium vero nesciu.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$28.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product4.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Sit amet consectetur elit.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$32.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product5.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Atque earum ullam non.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$35.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product6.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Modi excepturi ut ipsam.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$38.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product7.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Provident odio, are Unde.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$28.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product8.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button">
+
+                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box"> <span class="pe-7s-look"></span></a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$22.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="tab-pane fade" id="seller" role="tabpanel">
+
+                    <div class="product_gallery">
+
+                        <div class="row">
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product9.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Atque earum ullam non.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$35.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product10.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Modi excepturi ut ipsam.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$38.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product11.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Provident odio, are Unde.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$28.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product12.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$22.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product13.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$22.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product14.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Lorem, ipsum dolor.</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$24.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product15.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Praesentium vero nesciu.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$28.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product16.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Sit amet consectetur elit.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$32.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="sales" role="tabpanel">
+
+                    <div class="product_gallery">
+
+                        <div class="row">
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product17.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Praesentium vero nesciu.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$28.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product18.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Sit amet consectetur elit.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$32.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product19.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Atque earum ullam non.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$35.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product20.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$22.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product21.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Lorem, ipsum dolor.</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$24.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product22.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Modi excepturi ut ipsam.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$38.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product23.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Provident odio, are Unde.</a>
+
+                                            </h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$28.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                                <article class="single_product">
+
+                                    <figure>
+
+                                        <div class="product_thumb">
+
+                                            <a href="product-detail.php"><img src="assets/img/product/product24.jpg"
+
+                                                    alt=""></a>
+
+                                            <div class="action_links">
+
+                                                <ul class="d-flex justify-content-center">
+
+                                                    <li class="add_to_cart"><a href="cart.php" title="Add to cart">
+
+                                                            <span class="pe-7s-shopbag"></span></a></li>
+
+                                                    <li class="wishlist"><a href="wishlist.html"
+
+                                                            title="Add to Wishlist"><span class="pe-7s-like"></span></a>
+
+                                                    </li>
+
+                                                    <li class="quick_button"><a href="#" title="Quick View"
+
+                                                            data-bs-toggle="modal" data-bs-target="#modal_box"> <span
+
+                                                                class="pe-7s-look"></span></a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                        <figcaption class="product_content text-center">
+
+                                            <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                            <div class="price_box">
+
+                                                <span class="current_price">$22.00</span>
+
+                                            </div>
+
+                                        </figcaption>
+
+                                    </figure>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- product section end -->
+
+    <!-- banner fullwidth section start -->
+    {% load static %}
+    <div class="banner_fullwidth_section mb-105" style="height:30rem;background-position: center;" data-bgimg="{% static 'assets/img/bg/backery-bg2.jpg' %}">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="banner_discount_text text-center">
+
+                        <!-- <h3 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s"><span>45%
+
+                            </span> Sale
+
+                            Off</h3>
+
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">Best Quality
+
+                            Bakery Products</h2>
+
+                        <p class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">Lorem ipsum
+
+                            dolor sit
+
+                            amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut
+
+                            labore et
+
+                            dolore magna</p>
+
+                        <a class="btn btn-link wow fadeInUp" href="shop-left-sidebar.html" data-wow-delay="0.3s"
+
+                            data-wow-duration="1.3s">Shop Now</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- banner fullwidth section end -->
+
+
+
+    <!-- product section start -->
+
+    <!-- <div class="product_section mb-80 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+
+        <div class="container">
+
+            <div class="section_title text-center mb-55">
+
+                <h2>Best Seller</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor
+
+                    incididunt ut
+
+                    labore et dolore magna</p>
+
+            </div>
+
+            <div class="row product_slick slick_navigation slick__activation" data-slick='{
+
+                "slidesToShow": 4,
+
+                "slidesToScroll": 1,
+
+                "arrows": true,
+
+                "dots": false,
+
+                "autoplay": false,
+
+                "speed": 300,
+
+                "infinite": true ,  
+
+                "responsive":[ 
+
+                  {"breakpoint":992, "settings": { "slidesToShow": 3 } }, 
+
+                  {"breakpoint":768, "settings": { "slidesToShow": 2 } }, 
+
+                  {"breakpoint":500, "settings": { "slidesToShow": 1 } }  
+
+                 ]                                                     
+
+            }'>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product11.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$22.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product12.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Lorem, ipsum dolor.</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$24.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product13.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Praesentium vero nesciu.</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$28.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product14.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Sit amet consectetur elit.</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$32.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product15.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Atque earum ullam non.</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$35.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product16.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Modi excepturi ut ipsam.</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$38.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product17.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Provident odio, are Unde.</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$28.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <article class="single_product">
+
+                        <figure>
+
+                            <div class="product_thumb">
+
+                                <a href="product-detail.php"><img src="assets/img/product/product18.jpg" alt=""></a>
+
+                                <div class="action_links">
+
+                                    <ul class="d-flex justify-content-center">
+
+                                        <li class="add_to_cart"><a href="cart.php" title="Add to cart"> <span
+
+                                                    class="pe-7s-shopbag"></span></a></li>
+
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><span
+
+                                                    class="pe-7s-like"></span></a></li>
+
+                                        <li class="quick_button"><a href="#" title="Quick View" data-bs-toggle="modal"
+
+                                                data-bs-target="#modal_box">
+
+                                                <span class="pe-7s-look"></span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <figcaption class="product_content text-center">
+
+                                <h4><a href="product-detail.php">Products Name Here</a></h4>
+
+                                <div class="price_box">
+
+                                    <span class="current_price">$22.00</span>
+
+                                </div>
+
+                            </figcaption>
+
+                        </figure>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <!-- product section end -->
+
+
+
+    <!-- brand section start -->
+
+    <!-- <div class="brand_section_area mb-100 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="brand_inner slick__activation" data-slick='{
+
+                        "slidesToShow": 5,
+
+                        "slidesToScroll": 1,
+
+                        "arrows": false,
+
+                        "dots": false,
+
+                        "autoplay": false,
+
+                        "speed": 300,
+
+                        "infinite": true ,  
+
+                        "responsive":[  
+
+                          {"breakpoint":992, "settings": { "slidesToShow": 4 } },  
+
+                          {"breakpoint":768, "settings": { "slidesToShow": 3 } }, 
+
+                          {"breakpoint":576, "settings": { "slidesToShow": 2 } }, 
+
+                          {"breakpoint":300, "settings": { "slidesToShow": 1 } }  
+
+                         ]                                                     
+
+                    }'>
+
+                        <div class="single_brand ">
+
+                            <a class="primary" href="#"><img src="assets/img/others/brand1.png" alt=""></a>
+
+                            <a class="secondary" href="#"><img src="assets/img/others/brand-hover1.png" alt=""></a>
+
+                        </div>
+
+                        <div class="single_brand">
+
+                            <a class="primary" href="#"><img src="assets/img/others/brand2.png" alt=""></a>
+
+                            <a class="secondary" href="#"><img src="assets/img/others/brand-hover2.png" alt=""></a>
+
+                        </div>
+
+                        <div class="single_brand">
+
+                            <a class="primary" href="#"><img src="assets/img/others/brand3.png" alt=""></a>
+
+                            <a class="secondary" href="#"><img src="assets/img/others/brand-hover3.png" alt=""></a>
+
+                        </div>
+
+                        <div class="single_brand">
+
+                            <a class="primary" href="#"><img src="assets/img/others/brand4.png" alt=""></a>
+
+                            <a class="secondary" href="#"><img src="assets/img/others/brand-hover4.png" alt=""></a>
+
+                        </div>
+
+                        <div class="single_brand">
+
+                            <a class="primary" href="#"><img src="assets/img/others/brand5.png" alt=""></a>
+
+                            <a class="secondary" href="#"><img src="assets/img/others/brand-hover5.png" alt=""></a>
+
+                        </div>
+
+                        <div class="single_brand ">
+
+                            <a class="primary" href="#"><img src="assets/img/others/brand1.png" alt=""></a>
+
+                            <a class="secondary" href="#"><img src="assets/img/others/brand-hover1.png" alt=""></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <!-- end -->
+
+
+
+    <!-- blog section start -->
+
+    <div class="blog_section mb-90">
+
+        <div class="container">
+
+            <div class="section_title text-center wow fadeInUp mb-50" data-wow-delay="0.1s" data-wow-duration="1.1s">
+
+                <h2>Latest Workshop</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna</p>
+
+            </div>
+
+            <div class="row blog_inner slick__activation" data-slick='{
+
+                "slidesToShow": 3,
+
+                "slidesToScroll": 1,
+
+                "arrows": false,
+
+                "dots": false,
+
+                "autoplay": false,
+
+                "speed": 300,
+
+                "infinite": true ,  
+
+                "responsive":[  
+
+                  {"breakpoint":992, "settings": { "slidesToShow": 2 } },  
+
+                  {"breakpoint":576, "settings": { "slidesToShow": 1 } }  
+
+                 ]                                                     
+
+            }'>
+
+                <div class="col-lg-4">
+
+                    <div class="single_blog wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">
+
+                        <div class="blog_thumb">
+
+                            <a href="blog-detail-left-sidebar.html"><img src="assets/img/product/anguri-jamun.jpg" alt=""></a>
+
+                        </div>
+
+                        <div class="blog_content">
+
+                            <div class="blog_arrow_btn">
+
+                                <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
+
+                            </div>
+
+                            <span>Comming Soon</span>
+
+                            <!-- <h3><a href="blog-detail-left-sidebar.html">Lorem ipsum doloril
+
+                                    sit amet consepy.</a></h3>
+
+                            <div class="blog__meta d-flex align-items-center">
+
+                                <div class="blog__meta__thumb">
+
+                                    <img src="assets/img/others/meta-img1.png" alt="">
+
+                                </div>
+
+                                <div class="blog__meta__text">
+
+                                    <ul class="d-flex">
+
+                                        <li>By: Admin</li>
+
+                                        <li><i class="icofont-calendar"></i> 22 Aug, 2021</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="single_blog wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
+
+                        <div class="blog_thumb">
+
+                            <a href="blog-detail-left-sidebar.html"><img src="assets/img/product/badam-burfi.jpg" alt=""></a>
+
+                        </div>
+
+                        <div class="blog_content">
+
+                            <div class="blog_arrow_btn">
+
+                                <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
+
+                            </div>
+
+                            <span class="color2">Comming Soon</span>
+
+                            <!-- <h3><a href="blog-detail-left-sidebar.html">Lorem ipsum dolor sit, elit,
+
+                                    dolores is .</a>
+
+                            </h3>
+
+                            <div class="blog__meta d-flex align-items-center">
+
+                                <div class="blog__meta__thumb">
+
+                                    <img src="assets/img/others/meta-img2.png" alt="">
+
+                                </div>
+
+                                <div class="blog__meta__text">
+
+                                    <ul class="d-flex">
+
+                                        <li>By: Admin</li>
+
+                                        <li><i class="icofont-calendar"></i> 22 Aug, 2021</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="single_blog wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
+
+                        <div class="blog_thumb">
+
+                            <a href="blog-detail-left-sidebar.html"><img src="assets/img/product/bal-mithai.jpg" alt=""></a>
+
+                        </div>
+
+                        <div class="blog_content">
+
+                            <div class="blog_arrow_btn">
+
+                                <a href="blog-detail-left-sidebar.html"><i class="ion-arrow-right-c"></i></a>
+
+                            </div>
+
+                            <span class="color3">Comming Soon</span>
+
+                            <!-- <h3><a href="blog-detail-left-sidebar.html"> harum dolorum culpa quas are
+
+                                    veniam</a></h3>
+
+                            <div class="blog__meta d-flex align-items-center">
+
+                                <div class="blog__meta__thumb">
+
+                                    <img src="assets/img/others/meta-img3.png" alt="">
+
+                                </div>
+
+                                <div class="blog__meta__text">
+
+                                    <ul class="d-flex">
+
+                                        <li>By: Admin</li>
+
+                                        <li><i class="icofont-calendar"></i> 22 Aug, 2021</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--end -->
+
+    <!--footer-->
+    {% include 'include/footer.html' %}
+    <!--end-->
+    
+    <!-- JS -->
+    {% include 'include/javascript.html' %}
+</body>
+
+
+
+</html>

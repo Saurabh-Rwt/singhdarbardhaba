@@ -1,0 +1,12 @@
+[10-Oct-2023 10:42:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'singh_darbar'@'localhost' to database 'singh_darbar' in /home/nc276deiog0t/public_html/connection.php:7
+Stack trace:
+#0 /home/nc276deiog0t/public_html/connection.php(7): mysqli_connect()
+#1 /home/nc276deiog0t/public_html/auth/index.php(14): include('/home/nc276deio...')
+#2 {main}
+  thrown in /home/nc276deiog0t/public_html/connection.php on line 7
+[11-Oct-2023 07:37:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'singh_darbar'@'localhost' to database 'singh_darbar' in /home/nc276deiog0t/public_html/connection.php:7
+Stack trace:
+#0 /home/nc276deiog0t/public_html/connection.php(7): mysqli_connect()
+#1 /home/nc276deiog0t/public_html/auth/index.php(14): include('/home/nc276deio...')
+#2 {main}
+  thrown in /home/nc276deiog0t/public_html/connection.php on line 7
