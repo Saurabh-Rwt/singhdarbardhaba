@@ -4,12 +4,12 @@
 <head>
     <title>Contact Us</title>   
     <!-- CSS -->
-    <?php include('include/css.php') ?>
+    {% include 'include/css.html' %}
 </head>
 
 <body>
     <!-- header -->
-    <?php include('include/header.php') ?>
+    {% include 'include/header.html' %}
     <!-- end -->
 
     <!--mini cart-->
@@ -83,14 +83,15 @@
     </div>
 
     <!-- breadcrumbs area start -->
-    <div class="breadcrumbs_aree breadcrumbs_bg mb-100" data-bgimg="assets/img/breadcrumb/bg.jpg">
+    {% load static %}
+    <div class="breadcrumbs_aree breadcrumbs_bg mb-100" data-bgimg="{% static 'assets/img/breadcrumb/bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumbs_text">
                         <h1>Contact Us</h1>
                         <ul>
-                            <li><a href="index.html">Home </a></li>
+                            <li><a href="/">Home </a></li>
                             <li> // Contact Us</li>
                         </ul>
                     </div>
@@ -125,7 +126,8 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6">
-                        <div class="contact_form" data-bgimg="assets/img/others/contact-form-bg-shape.png">
+                        {% load static %}
+                        <div class="contact_form" data-bgimg="{% static 'assets/img/others/contact-form-bg-shape.png' %}">
                             <h2>Send A Quest</h2>
                             <form id="contact-form" action="https://whizthemes.com/mail-php/other/mail.php">
                                 <div class="form_input">
@@ -160,12 +162,12 @@
     <!--contact map end-->
 
     <!--footer-->
-    <?php include('include/footer.php') ?>
+    {% include 'include/footer.html' %}
     <!--end-->
 
     <!-- JS -->
-    <?php include('include/javascript.php') ?>
-
+    {% include 'include/javascript.html' %}
+    <!--end-->
 
 </body>
 

@@ -4,13 +4,13 @@
 <head>
     <title>Sweets</title>
     <!-- CSS -->
-    <?php include('include/css.php') ?>
+    {% include 'include/css.html' %}
 </head>
 
 <body>
 
     <!-- header -->
-    <?php include('include/header.php') ?>
+    {% include 'include/header.html' %}
     <!-- end -->
 
     <!--mini cart-->
@@ -84,7 +84,8 @@
     </div>
 
     <!-- breadcrumbs area start -->
-    <div class="breadcrumbs_aree breadcrumbs_bg mb-100" data-bgimg="assets/img/breadcrumb/bg.jpg">
+    {% load static %}
+    <div class="breadcrumbs_aree breadcrumbs_bg mb-100" data-bgimg="{% static 'assets/img/breadcrumb/bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -197,62 +198,117 @@
                                 <div class="tab-pane fade show active" id="grid">
                                     <div class="row grid__product">
                                         <div class="row">
-                                            <?php
-                                                include('get-product.php');
-                                                foreach ($products as $product){
-                                                    $id = $product['id'];
-                                                    $product_name = $product['name'];
-                                                    $product_image = $product['image'];
-                                                    $product_price = $product['price'];
-                                                    $product_des = $product['description'];
-                                                    ?>
-                                                        <div class="col-lg-4 col-md-4 col-sm-6">
-                                                            <article class="single_product wow fadeInUp" data-wow-delay="0.1s"
-                                                                data-wow-duration="1.1s">
-                                                                <figure>
-                                                                    <div class="product_thumb">
-                                                                        <a href="product-detail.php?id=<?php echo $id; ?>">
-                                                                            <img src="assets/img/product/<?php echo $product_image; ?>" alt="">
+                                            <div class="col-md-4 col-sm-6">
+                                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s" style="visibility: visible; animation-duration: 1.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                    <figure>
+                                                        <div class="product_thumb">
+                                                            <a href="">
+                                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                                            </a>
+                
+                                                            <div class="action_links">
+                                                                <ul class="d-flex justify-content-center">
+                                                                    <li class="add_to_cart">
+                                                                        <a href="cart.php" title="Add to cart">
+                                                                            <span class="pe-7s-shopbag"></span>
                                                                         </a>
-                                                                        <div class="action_links">
-                                                                            <ul class="d-flex justify-content-center">
-                                                                                <li class="add_to_cart">
-                                                                                    <a href="cart.php" title="Add to cart">
-                                                                                        <span class="pe-7s-shopbag"></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                                <li class="wishlist">
-                                                                                    <a href="#" title="Add to Wishlist">
-                                                                                        <span class="pe-7s-like"></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                                <li class="quick_button">
-                                                                                    <a href="#" title="Quick View"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#modal_box">
-                                                                                        <span class="pe-7s-look"></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <figcaption class="product_content text-center">
-                                                                        <h4><a href="product-detail.php"><?php echo $product_name; ?> </a>
-                                                                        </h4>
-                                                                        <div class="price_box">
-                                                                            <span
-                                                                                class="current_price"><?php echo $product_price; ?>₹</span>
-                                                                        </div>
-                                                                    </figcaption>
-                                                                </figure>
-                                                            </article>
+                                                                    </li>
+                                                                    <li class="wishlist">
+                                                                        <a href="#" title="Add to Wishlist">
+                                                                            <span class="pe-7s-like"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="quick_button">
+                                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                                            <span class="pe-7s-look"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                    <?php
-                                                }
-                                                    if (empty($products)) {
-                                                    echo "<div class='col-12'>No products found.</div>";
-                                                }
-                                            ?>
+                                                        <figcaption class="product_content text-center">
+                                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                                            <div class="price_box">
+                                                                <span class="current_price">₹ 600</span>
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6">
+                                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s" style="visibility: visible; animation-duration: 1.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                    <figure>
+                                                        <div class="product_thumb">
+                                                            <a href="">
+                                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                                            </a>
+                
+                                                            <div class="action_links">
+                                                                <ul class="d-flex justify-content-center">
+                                                                    <li class="add_to_cart">
+                                                                        <a href="cart.php" title="Add to cart">
+                                                                            <span class="pe-7s-shopbag"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="wishlist">
+                                                                        <a href="#" title="Add to Wishlist">
+                                                                            <span class="pe-7s-like"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="quick_button">
+                                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                                            <span class="pe-7s-look"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <figcaption class="product_content text-center">
+                                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                                            <div class="price_box">
+                                                                <span class="current_price">₹ 600</span>
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6">
+                                                <article class="single_product wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s" style="visibility: visible; animation-duration: 1.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                                    <figure>
+                                                        <div class="product_thumb">
+                                                            <a href="">
+                                                                <img src="https://lh3.googleusercontent.com/proxy/w8bbPv-u7nPeI220OBKi4ThnfZfk_eFoFvqIc81_yxkqid3FNmKDfsszaJUS7OLmrfsscrAjWqIO3DwdvPZ_WEIest119Cxy1THSJZaK6Qkz2rQIg3fr8Bd0Fj4VL3SFXqaqUuxtqx2vuOh6cv_6W9e-k5S5nYMjjagG19opNaHY2qQZdcZg9pVGlZYoIuY24Tb1RWsXh9HPhFeiWJrf" alt="">
+                                                            </a>
+                
+                                                            <div class="action_links">
+                                                                <ul class="d-flex justify-content-center">
+                                                                    <li class="add_to_cart">
+                                                                        <a href="cart.php" title="Add to cart">
+                                                                            <span class="pe-7s-shopbag"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="wishlist">
+                                                                        <a href="#" title="Add to Wishlist">
+                                                                            <span class="pe-7s-like"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="quick_button">
+                                                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#modal_box">
+                                                                            <span class="pe-7s-look"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <figcaption class="product_content text-center">
+                                                            <h4><a href="product-detail.php">MILK CAKE</a></h4>
+                                                            <div class="price_box">
+                                                                <span class="current_price">₹ 600</span>
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
+                                                </article>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -509,11 +565,11 @@
     <!-- end -->
 
     <!--footer-->
-    <?php include('include/footer.php') ?>
+    {% include 'include/footer.html' %}
     <!--end-->
 
     <!-- JS -->
-    <?php include('include/javascript.php') ?>
+    {% include 'include/javascript.html' %}
 
 
 </body>

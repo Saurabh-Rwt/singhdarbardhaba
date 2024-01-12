@@ -21,4 +21,10 @@ from singhdarbarapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('about', views.about, name='about'),
+    path('sweets-dhaba', views.sweetsDhaba, name='sweetsDhaba'),
+    path('pan-india', views.panIndia, name='panIndia'),
+    path('contact', views.contact, name='contact'),
+    # path('product-detail', views.productDetail, name='productDetail'),
+    path('product/<str:name>/', views.productDetail, name='product-detail'),
 ]
