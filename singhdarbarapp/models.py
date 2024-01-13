@@ -23,7 +23,7 @@ class Product(models.Model):
 
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='static/assets/img/')
+    image = models.ImageField(upload_to='static/assets/img/product')
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField()
     category = models.CharField(max_length=255, choices=CATEGORY_CHOICES)
