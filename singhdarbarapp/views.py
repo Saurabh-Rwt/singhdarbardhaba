@@ -1,6 +1,7 @@
 from django.db import connection
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.shortcuts import render
 from .models import Product
 
 def index(request):
@@ -40,31 +41,35 @@ def about(request):
     return render(request, 'about.html', {'testimonials': testimonials})
 
 def sweetsDhaba(request):
-    # Fetch all products initially
     all_products = Product.objects.all()
 
-    # Get the selected category from the request parameters
-    selected_category = request.GET.get('category', None)
+    selected_category_slug = request.GET.get('category', None)
+    selected_subcategory = request.GET.get('subcategory', None)
 
-    # If a category is selected, filter products by category
-    if selected_category:
-        all_products = all_products.filter(category=selected_category)
+    filters = {}
 
-    # Paginate the products
-    paginator = Paginator(all_products, 9)  # Show 8 products per page
+    # Apply category filter
+    if selected_category_slug:
+        filters['category'] = selected_category_slug
 
-    page = request.GET.get('page', 1)  # Default to page 1 if no page parameter is provided
+    # Apply subcategory filter
+    if selected_subcategory:
+        filters['sub_category'] = selected_subcategory
+
+    all_products = all_products.filter(**filters)
+
+    paginator = Paginator(all_products, 6)
+
+    page = request.GET.get('page', 1)
 
     try:
         products = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver the first page.
         products = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g., 9999), deliver the last page.
         products = paginator.page(paginator.num_pages)
 
-    return render(request, 'sweets-dhaba.html', {'products': products})
+    return render(request, 'sweets-dhaba.html', {'products': products, 'selected_category_slug': selected_category_slug, 'selected_subcategory': selected_subcategory})
 
 def panIndia(request):
     return render(request, 'pan-india.html')

@@ -452,7 +452,7 @@
                                                 <a href="{% url 'product-detail' slug=product.slug %}">
                                                     <img src="{{ product.image }}" alt="{{ product.name }}">
                                                 </a>
-                                                <div class="action_links">
+                                                <!-- <div class="action_links">
                                                     <ul class="d-flex justify-content-center">
                                                         <li class="add_to_cart">
                                                             <a href="" title="Add to cart">
@@ -470,10 +470,10 @@
                                                             </a>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <figcaption class="product_content text-center">
-                                                <h4><a href="#">{{ product.name }}</a></h4>
+                                                <h4><a href="{% url 'product-detail' slug=product.slug %}">{{ product.name }}</a></h4>
                                                 <div class="price_box">
                                                     <span class="current_price">₹ {{ product.price }}</span>
                                                 </div>

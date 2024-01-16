@@ -25,7 +25,7 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='static/assets/img/product')
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    description = models.TextField()
+    description = models.TextField(max_length=500)
     category = models.CharField(max_length=255, choices=CATEGORY_CHOICES)
     sub_category = models.CharField(max_length=255, choices=SUBCATEGORY_CHOICES)
     pan_india = models.BooleanField(default=False)
